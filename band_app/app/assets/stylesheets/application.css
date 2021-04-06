@@ -21,10 +21,16 @@
 
  
 
-body{
+body {
     display: flex;
-    
+    flex-direction: column;
 }
+
+a {
+    align-self: flex-start;
+}
+
+
 
 
 
