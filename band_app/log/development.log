@@ -63,3 +63,129 @@ Migrating to CreateUsers (20210406151144)
   ↳ bin/rails:9
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/evanleon/.rbenv/versions/2.5.1/bin/annotate:23
+Started GET "/users/new" for ::1 at 2021-04-06 14:09:03 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/evanleon/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as */*
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 641ms (Views: 617.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/users/new" for ::1 at 2021-04-06 14:13:45 -0400
+Processing by UsersController#new as */*
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 85ms (Views: 73.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/new" for ::1 at 2021-04-06 14:54:51 -0400
+Processing by UsersController#new as */*
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 83ms (Views: 69.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/users/new" for ::1 at 2021-04-06 14:55:09 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-04-06 14:55:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/bccf4b051e7c0a61/variables" for ::1 at 2021-04-06 14:55:16 -0400
+Started POST "/users" for ::1 at 2021-04-06 15:00:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/c7f8bccdbd057e6a/variables" for ::1 at 2021-04-06 15:00:22 -0400
+Started POST "/users" for ::1 at 2021-04-06 15:00:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/42e208be05f86cb4/variables" for ::1 at 2021-04-06 15:00:28 -0400
+Started POST "/users" for ::1 at 2021-04-06 15:02:04 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/40c55fad76431be9/variables" for ::1 at 2021-04-06 15:02:04 -0400
+Started POST "/users" for ::1 at 2021-04-06 15:02:42 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/27e891d213860196/variables" for ::1 at 2021-04-06 15:02:42 -0400
+Started GET "/users/new" for ::1 at 2021-04-06 15:02:53 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 21.5ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/users" for ::1 at 2021-04-06 15:02:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"rc0OeNJO7Cpok40GLUTCDehPJdVEogCeVt3MPdERzzYpnlWdLUHynVBBMlmTjW94ApdxFpsaHPRjOCMo257ZOw", "user"=>{"email"=>"blah@blah.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "blah@blah.com"], ["password_digest", "$2a$12$qdKWIyNT.FWt2fqMTKEwQug9VntTwlBrXKOkWvh/QEPG0EvE2gdyi"], ["session_token", "4OZDfiTFYdmqIlNsT5GXFg"]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:47
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1 WHERE "users"."id" = $2[0m  [["session_token", "h-aojqDLaDDaDXnd0Nid-g"], ["id", 1]]
+  ↳ app/models/user.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:47
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 235ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/users/1" for ::1 at 2021-04-06 15:02:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
